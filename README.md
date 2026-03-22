@@ -16,3 +16,9 @@ conda create -p venv python==3.12.7 -y
 ```
 conda activate venv/
 ```
+## STEP 4 :
+#### Create .gitignore file from git and pull into the vscode terminal
+```
+git pull
+```
+
