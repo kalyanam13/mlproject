@@ -22,4 +22,4 @@ conda activate venv/
 git pull
 ```
 
-#### 1. Now Creating a setup.py file 
+#### 1.  Now Creating a setup.py file 
