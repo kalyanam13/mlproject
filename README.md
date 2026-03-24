@@ -23,3 +23,5 @@ git pull
 ```
 
 #### 1.  Now Creating a setup.py file 
+#### 2. Now Created Exception.py for handling exception with the help of custom exception
+#### 3. Created logger.py
