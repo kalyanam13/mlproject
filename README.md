@@ -1,47 +1,62 @@
-# ==============================
-# 📌 STEP 1: Activate Conda
-# ==============================
-conda activate
+# 🎓 Student Performance Prediction - End-to-End Machine Learning Project
 
-# ==============================
-# 📌 STEP 2: Create Virtual Environment
-# ==============================
-conda create -p venv python==3.12.7 -y
+## 📌 Project Overview
 
-# ==============================
-# 📌 STEP 3: Activate Environment
-# ==============================
-conda activate venv/
+This project is an End-to-End Machine Learning Project built using Python.  
+The main objective of this project is to predict a student's **Math Score** based on different features such as:
 
-# ==============================
-# 📌 STEP 4: Pull .gitignore from Repo
-# ==============================
-git pull
+- Gender
+- Race/Ethnicity
+- Parental Level of Education
+- Lunch Type
+- Test Preparation Course
+- Reading Score
+- Writing Score
 
-# ==============================
-# 📌 STEP 5: Create Project Structure
-# ==============================
-mkdir src
-mkdir src/components
-mkdir src/pipeline
-mkdir notebook
-mkdir logs
+This project follows a complete Machine Learning pipeline from Data Ingestion to Model Training and Evaluation.
 
-# Create files
-touch setup.py
-touch requirements.txt
-touch src/__init__.py
-touch src/exception.py
-touch src/logger.py
+---
 
-# Optional pipeline files
-touch src/pipeline/__init__.py
-touch src/pipeline/training_pipeline.py
-touch src/pipeline/prediction_pipeline.py
+# 🚀 Project Workflow
 
-# Optional component files
-touch src/components/__init__.py
-touch src/components/data_ingestion.py
-touch src/components/data_transformation.py
-touch src/components/model_trainer.py
+The complete workflow of this project includes:
 
+1. Data Ingestion  
+2. Data Transformation  
+3. Model Training  
+4. Model Evaluation  
+5. Saving Model and Preprocessor  
+
+---
+
+# 📂 Project Structure
+
+```bash
+MLProject/
+│
+├── artifacts/
+│   ├── train.csv
+│   ├── test.csv
+│   ├── data.csv
+│   ├── model.pkl
+│   └── preprocessor.pkl
+│
+├── notebook/
+│   └── data/
+│       └── stud.csv
+│
+├── src/
+│   ├── components/
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   │
+│   ├── pipeline/
+│   │
+│   ├── exception.py
+│   ├── logger.py
+│   └── utils.py
+│
+├── requirements.txt
+├── setup.py
+└── README.md
